@@ -22,7 +22,7 @@ Table of Contents
 
 Status
 ====
-![lua-resty-rfc5424](https://travis-ci.org/detailyang/lua-resty-rfc5424.svg?branch=master)
+[![Build Status](https://travis-ci.org/detailyang/lua-resty-rfc5424.svg?branch=master)](https://travis-ci.org/detailyang/lua-resty-rfc5424)
 
 Production Ready
 
