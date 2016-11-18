@@ -7,7 +7,7 @@ Name
 lua-resty-rfc5424
 
 # lua-resty-rfc5424
-This is an implementation of the [RFC5424] (syslog) in the OpenResty
+This is an implementation of the [RFC5424] <syslog> in the OpenResty
 
 Table of Contents
 -----------------
