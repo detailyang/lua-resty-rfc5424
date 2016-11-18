@@ -1,0 +1,15 @@
+sudo: true
+language: c
+before_install:
+  - sudo apt-get install -y build-essential cpanminus perlmagick
+  - wget https://github.com/lighttpd/weighttp/archive/weighttp-0.4.tar.gz
+  - tar -zxf weighttp-0.4.tar.gz
+  - (cd weighttp-weighttp-0.4 && ./autogen.sh && ./configure && make && sudo make install)
+  - wget https://openresty.org/download/openresty-1.11.2.1.tar.gz
+  - tar -zxf openresty-1.11.2.1.tar.gz
+script:
+  - (cd openresty-1.11.2.1 && ./configure && make -j4 && sudo make install)
+  - sudo cpanm Test::Nginx
+  - (export PERL_MM_USE_DEFAULT=1 && git clone https://github.com/openresty/test-nginx.git && cd test-nginx && perl Makefile.PL && sudo make uninstall && sudo make install)
+  - make test
+
