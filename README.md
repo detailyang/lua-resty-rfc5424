@@ -32,8 +32,7 @@ It's recommended to use [lua-resty-logger-socket] and [rsyslog] together:)
 
 Production Architecture can be as the following:
 
-![architecture](https://)
-
+![architecture](https://raw.githubusercontent.com/detailyang/lua-resty-rfc5424/master/fixtures/rsyslog.jpg)
 
 API
 ====
