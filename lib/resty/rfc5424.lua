@@ -63,7 +63,7 @@ local Severity = {
     ["INFO"] = LOG_INFO,
     ["DEBUG"] = LOG_DEBUG,
 }
-local os_date = os.data
+local os_date = os.date
 local ngx_time = ngx.time
 local string_format = string.format
 local rfc5424_timestamp_format = "%b %d %H:%M:%S"
